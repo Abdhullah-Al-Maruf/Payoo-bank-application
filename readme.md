@@ -1,3 +1,8 @@
+#mobileNumber is: 01822524817
+#Pin number is:1234
+
+
+
 <img src="./assets/Logo-full.png" width="200"  style="background:white;padding:10px;"/>
 
 # PAYOO - Smart MFS Interface 

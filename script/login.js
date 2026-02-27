@@ -11,13 +11,16 @@ document.getElementById('login-btn')
     const newNumber =mobileNumber.value ;
     const Pin =document.getElementById('password')
     const newPin=Pin.value;
-    if(newNumber=="01822524817" && newPin=="1234"){
-         alert("Successfully Logged In!")
-         window.location.assign("./homepage.html");
-    }else{
-      alert("Information are Invalid")
-      return
-    }
-      
 
+   if(newNumber=="01822524817" && newPin=="1234"){
+         alert("Successfully Logged In!")
+          window.location.assign("./homepage.html");
+      
+   }
+   else if(newNumber =='' && newPin==''){
+    alert( "enter your pin and mobile number")
+   }
+   else{
+    alert("check your pin or number!")
+   }
    })
