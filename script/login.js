@@ -13,7 +13,7 @@ document.getElementById('login-btn')
     const newPin=Pin.value;
     if(newNumber=="01822524817" && newPin=="1234"){
          alert("Successfully Logged In!")
-         window.location.assign("/homepage.html");
+         window.location.assign("./homepage.html");
     }else{
       alert("Information are Invalid")
       return
