@@ -7,7 +7,7 @@
 
 document.getElementById('login-btn')
    .addEventListener("click",function (){
-      const mobileNumber= document.getElementById('mobile-number');
+      const mobileNumber= document.getElementById ('mobile-number');
     const newNumber =mobileNumber.value ;
     const Pin =document.getElementById('password')
     const newPin=Pin.value;
