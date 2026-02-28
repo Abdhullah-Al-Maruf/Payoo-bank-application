@@ -4,6 +4,7 @@ document.getElementById("cash-out-btn").
 
         // const agentNumberInput = document.getElementById("agent-num")
         // const agentNumber = agentNumberInput.value;
+
         const agentNumber=getInputValue("agent-num");
         if (agentNumber.length !== 11) {
             alert("Please enter a 11 digit agent Number")
@@ -13,10 +14,13 @@ document.getElementById("cash-out-btn").
         //step-2 get the amount and validation
         const withdrawAmount = getInputValue("amount")
         const amount = Number(withdrawAmount);
-        const mainBalance = document.getElementById("available-balance")
-        const availableBalance = Number(mainBalance.innerText);
+        
+        
+        const availableBalance =getBalance();
         const PinNumber = getInputValue("withdraw-pass");
-// step- pin number validation
+
+
+        // step- pin number validation
         if (PinNumber == "1234") {
 
         //  step-4 get the balance and minus the value with the withdraw amount
@@ -32,7 +36,7 @@ document.getElementById("cash-out-btn").
         // step-5 set the updated balance in available balance
             else {
                 const updatedBalance = availableBalance - amount;
-                mainBalance.innerText = updatedBalance;
+                setBalance(updatedBalance);
                 alert(`amount ${amount} taka is withdraw successfully`)
                 
                 // clear the input field

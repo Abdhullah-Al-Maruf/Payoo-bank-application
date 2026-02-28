@@ -15,3 +15,16 @@ const clear=(id)=>{
     const fieldValue=document.getElementById(id);
     fieldValue.value=""
 }
+
+// this functon get the main balance inner text as number
+const getBalance=()=>Number(document.getElementById("available-balance").innerText)
+
+
+// this function will be set the new balance after withdraw
+const setBalance=(value)=>{
+  const  balanceElement=document.getElementById("available-balance");
+  balanceElement.innerText=value;
+
+
+
+}
