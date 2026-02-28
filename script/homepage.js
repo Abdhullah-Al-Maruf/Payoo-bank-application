@@ -1,19 +1,21 @@
 document.getElementById("cash-out-btn").
     addEventListener("click", function () {
         // step-1 get the input of agent number and validation
-        const agentNumberInput = document.getElementById("agent-num")
-        const agentNumber = agentNumberInput.value;
+
+        // const agentNumberInput = document.getElementById("agent-num")
+        // const agentNumber = agentNumberInput.value;
+        const agentNumber=getInputValue("agent-num");
         if (agentNumber.length !== 11) {
             alert("Please enter a 11 digit agent Number")
             return;
         }
 
         //step-2 get the amount and validation
-        const withdrawAmount = document.getElementById("amount").value;
+        const withdrawAmount = getInputValue("amount")
         const amount = Number(withdrawAmount);
         const mainBalance = document.getElementById("available-balance")
         const availableBalance = Number(mainBalance.innerText);
-        const PinNumber = document.getElementById("withdraw-pass").value;
+        const PinNumber = getInputValue("withdraw-pass");
 // step- pin number validation
         if (PinNumber == "1234") {
 
@@ -32,6 +34,11 @@ document.getElementById("cash-out-btn").
                 const updatedBalance = availableBalance - amount;
                 mainBalance.innerText = updatedBalance;
                 alert(`amount ${amount} taka is withdraw successfully`)
+                
+                // clear the input field
+                clear("agent-num");
+                clear("amount");
+                clear("withdraw-pass")
             }
 
 
