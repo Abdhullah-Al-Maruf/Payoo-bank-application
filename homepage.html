@@ -83,7 +83,7 @@
         </section>
 
         <!-- add money section -->
-        <section class="">
+        <section class="hidden">
             <h2 class="font-bold">Add Money</h2>
             <div class="bg-base-100 w-full shadow mx-auto mt-4 rounded-3xl">
                 <div class="card-body">
@@ -142,7 +142,7 @@
 
 
         <!-- Transfer Money -->
-        <section class="hidden">
+        <section class="">
             <h2 class="font-bold">Transfer Money</h2>
             <div class="bg-base-100 w-full shadow mx-auto mt-4 rounded-3xl">
                 <div class="card-body">
@@ -159,7 +159,7 @@
                         <label class="label text-neutral font-bold">Pin Number</label>
                         <input id="transfer-pass" type="password" maxlength="4"
                             class="input w-full rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
-                        <button id="cash-out-btn" class="btn btn-primary rounded-full mt-4">Withdraw Money</button>
+                        <button id="withdraw-btn" class="btn btn-primary rounded-full mt-4">Withdraw Money</button>
                     </fieldset>
                 </div>
             </div>
@@ -217,7 +217,8 @@
     </main>
     <script src="./script/machine.js"></script>
     <script src="./script/addmoney.js"></script>
-    <script src="./script/homepage.js"></script>
+    <script src="./script/transfer.js"></script>
+    <script src="./script/cashout.js"></script>
 </body>
 
 </html>
