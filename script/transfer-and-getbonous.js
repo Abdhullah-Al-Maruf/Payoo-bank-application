@@ -58,3 +58,46 @@ else{
             
 
 })
+
+
+// get bonus section
+document.getElementById("bonus")
+    .addEventListener("click",()=>{
+        const couponEntered=getInputValue("bonus-cuppon")
+        const checkCoupon=couponEntered.trim().toLowerCase();
+        // 100 taka coupon
+        const couponHundred="coupon-100";
+        // 500  taka coupon
+        const couponFiveHundred="coupon-500";
+        // 100 taka coupon
+        const couponThousand="coupon-1000";
+
+        if ( checkCoupon === couponHundred) {
+            const totalAmountwithBonus=getBalance()+100;
+            setBalance(totalAmountwithBonus); 
+            alert(`
+            coupon applied succesfully.
+            newBalance:${totalAmountwithBonus}
+                `)   
+        }
+        else if ( checkCoupon === couponFiveHundred) {
+            const totalAmountwithBonus=getBalance()+500;
+            setBalance(totalAmountwithBonus); 
+            alert(`
+            coupon applied succesfully.
+            newBalance:${totalAmountwithBonus}
+                `)   
+        }
+         else if ( checkCoupon === couponThousand) {
+            const totalAmountwithBonus=getBalance()+1000;
+            setBalance(totalAmountwithBonus);
+            alert(`
+            coupon applied succesfully.
+            newBalance:${totalAmountwithBonus}
+                `)  
+        }
+        else{
+            alert("Invalid Coupon")
+        }
+    }
+)
