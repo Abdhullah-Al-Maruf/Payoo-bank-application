@@ -28,3 +28,18 @@ const setBalance=(value)=>{
 
 
 }
+
+// show number
+const showAccount=id=>document.getElementById(id).value;
+
+// date formating 
+const now = new Date();
+
+const formattedDate = now.toLocaleString('en-BD', {
+  day: '2-digit',
+  month: 'long',
+  year: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  hour12: true
+});
