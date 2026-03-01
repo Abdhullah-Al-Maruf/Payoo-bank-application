@@ -2,6 +2,11 @@
 #Pin number is:1234
 
 
+#GET BONOUS COUPON ARE:coupon-100,
+                    coupon-500
+                        coupon-1000
+
+
 
 <img src="./assets/Logo-full.png" width="200"  style="background:white;padding:10px;"/>
 
