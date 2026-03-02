@@ -1,4 +1,4 @@
-const buttons=document.querySelectorAll(".btn")
+const buttons=document.querySelectorAll(".flex-col")
 buttons.forEach(button =>{
     button.addEventListener("click",()=>{
         // remove the color class from the all btn 
