@@ -12,10 +12,7 @@ document.getElementById("add-money-btn").
 
         // step-2 get the account number
         const accNumber = showAccount("bank-acc-num");
-        if (accNumber.length !== 11) {
-            alert("please  enter 11 digit account number")
-            return;
-        }
+        isEleven(accNumber);
 
         //step-3 get amount and update according to the correct pin
         const addMoney = Number(getInputValue("amount-to-add"));

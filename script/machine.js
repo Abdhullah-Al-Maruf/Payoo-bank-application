@@ -44,5 +44,13 @@ const formattedDate = now.toLocaleString('en-BD', {
   hour12: true
 });
 
+// check value is number and 11 digit
+const isEleven=(id)=> {if(!/^\d{11}$/.test(id)){
+   alert("Enter a valid 11 digit number");
+    return;
+    }
+  }
+
+
 
 
