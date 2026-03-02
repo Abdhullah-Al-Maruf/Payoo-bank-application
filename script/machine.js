@@ -53,4 +53,20 @@ const isEleven=(id)=> {if(!/^\d{11}$/.test(id)){
 
 
 
+  // this function will show only the click btn element 
+
+  function showOnly(id){
+    // first select all section by same class name
+    const sections=document.querySelectorAll(".section")
+
+    // hide all section
+  sections.forEach(item =>item.classList.add("hidden")); 
+
+  //show click section by id
+  const selected=document.getElementById(id);
+  selected.classList.remove("hidden")  ;
+
+   
+  }
+
 
